@@ -1,0 +1,17 @@
+//write a code in c which can add the digits of the number
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n,sum=0,m;
+    printf("Enter a number.");
+    scanf("%d",&n);
+    while(n>0){
+        m=n%10;
+        sum=sum+m;
+        n=n/10;
+    }
+    printf("sum= %d",sum);
+    return 0;
+
+}
